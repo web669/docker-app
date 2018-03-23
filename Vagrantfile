@@ -81,6 +81,7 @@ Vagrant.configure("2") do |config|
      sudo apt-get update
      sudo apt-get install docker-ce -y
      sudo apt-get install nginx -y
+     #todo fix not deleting
      sudo unlink /etc/nginx/site-enabled/default
      sudo touch /etc/nginx/site-enabled/nginx.conf
      sudo chmod 777 /etc/nginx/site-enabled/nginx.conf
